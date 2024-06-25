@@ -1,0 +1,9 @@
+print("Welcome to the tip calculator")
+bill =float (input("Cost"))
+tip = int(input("How much tip do you want to give? 10, 15, 20"))
+split = int(input("how many ways are you spliting the bill"))
+tip_in_procent = 1 +int(tip)/100
+your_part = bill * tip_in_procent / split
+your_part_rounded = round(your_part,2)
+your_part_rounded = "{:.2f}".format(your_part)
+print (f"Each person should pay: {your_part_rounded} SEK")
